@@ -15,8 +15,8 @@ namespace PartyInvites.Models
         [Required(ErrorMessage = "Please enter your phone")]
         public string Phone { get; set; }
 
-        [Required(ErrorMessage = "Please enter a valid email")]
-        [EmailAddress(ErrorMessage = "Please enter better")]
+        [Required(ErrorMessage = "Please enter a valid email.")]
+        [EmailAddress(ErrorMessage = "Please enter better.")]
         public string Email { get; set; }
 
         public bool? WillAttend { get; set; }
